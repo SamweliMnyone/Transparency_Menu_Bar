@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px ;
+    box-sizing: border-box;
+
+    /* color for navigation */
+    background: rgba(0,0,0,0.6); 
+
+    /* make a border  in bottom with color of white and sttyle is solid  */
+    border-bottom: 1px solid #fff;
+
+}
+/* NOTE: If your navigation is 80px height then make sure 
+all other thing inside nav should be 80px inoder to
+ easy in arranging */
+/* This means select element with class */
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+
+    /* This align thing left but make ather 
+    content to follow in a right side and other 
+    continue (allow wrapping to left of each cintent) */
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+
+    /* Change layput case */
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+
+/* This means select element with element */
+nav ul{
+
+    /* Change style of a list */
+    list-style: none;
+
+    float:right;
+    margin: 0;
+    padding: 0;
+
+    /* This arrange list to be horizontal */
+    display: flex;
+}
+
+/* This means select element nav with 
+element ul also with element li and last with 
+element a */
+nav ul li a{
+
+    /* Space btn line of a text inoder to be readeble */
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+
+    /* This remove a line of links */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+/* This means to hover this selected nav with 
+element ul, with element li and with element a 
+
+Hapa tunafanya button kuleta rangi pale mtu anapoiwekea cursor juu*/
+nav ul li a:hover{
+    background-color: rgb(184, 175, 175);
+    border-radius: 30px;
+}
+
+/* Hi code inafanya kazi ya kuweka button iliobonyezwa iwe focused */
+nav ul li a:active,
+nav ul li a:focus{
+    background-color: rgb(92, 92, 102);
+    border-radius: 30px;
+}
+section{
+    width: 100%;
+
+    /* This sets the height of an element to 100% of the viewport of height.
+    It takes up the entire height of the user's screen */
+    height: 100vh;
+    background: url(images/laptop.jpg);
+
+    /* This make a size of picture to fit in any screen and fit full screen */
+    background-size: cover;
+    background-position: center;
+    
+}
